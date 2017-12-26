@@ -45,7 +45,7 @@ urlpatterns += i18n_patterns(
 python manage.py migrate
 
 ```
-6. Descomente as linhas comentadas no ítem 3.
+6. Descomente as linhas comentadas no ítem 4.
 7. Se tudo ocorrer bem, já é possível executar o projeto:
 ```powershell
 python manage.py runserver
