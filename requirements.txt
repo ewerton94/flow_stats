@@ -1,0 +1,11 @@
+django
+django-modeltranslation
+pandas
+scipy
+bs4
+psycopg2
+furl
+plotly
+xlrd
+xlwt
+lmoments3
