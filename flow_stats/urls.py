@@ -24,5 +24,4 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     url(r'^admin/', admin.site.urls),
     url(r'^stats/', include('stats.urls')),
-    url(r'^$', include('stats.urls')),
 )
