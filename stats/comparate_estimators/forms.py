@@ -1,5 +1,5 @@
 from django import forms
-from ..models import distributions, estimators
+from ..models import DISTRIBUTIONS, ESTIMATORS
 from django.utils.translation import gettext_lazy as _
 
 class SerieFromParametersForm(forms.Form):
@@ -8,7 +8,7 @@ class SerieFromParametersForm(forms.Form):
     probability_values = forms.CharField(label=_("Values of probability (numbers separateds by commas)")+":",required=False,widget=forms.TextInput(attrs={'class':'form-control'}))
     sample_size = forms.IntegerField(label=_("Size of sample")+":",required=False,widget=forms.TextInput(attrs={'class':'form-control'}))
     distribution = forms.ChoiceField(label=_("Distribution")+":",widget=forms.Select(attrs={'class':'form-control'}),choices=
-                                 ((key, distributions[key]) for key in distributions))
+                                 ((key, DISTRIBUTIONS[key]) for key in DISTRIBUTIONS))
     alpha = forms.FloatField(label=_("Apha")+":",widget=forms.TextInput(attrs={'class':'form-control'}))
     betha = forms.FloatField(label=_("Betha")+":",widget=forms.TextInput(attrs={'class':'form-control'}))
     kappa = forms.FloatField(label=_("Kappa")+":",widget=forms.TextInput(attrs={'class':'form-control'}))
@@ -18,6 +18,6 @@ class ResamplingSerieForm(forms.Form):
                                  ((i,i) for i in [5,10,15,20,25,30,50,100]))
     number_sample = forms.IntegerField(label=_("Number of samples")+":",required=True,widget=forms.TextInput(attrs={'class':'form-control'}))
     distribution = forms.ChoiceField(label=_("Distribution")+":",widget=forms.Select(attrs={'class':'form-control'}),choices=
-                                 ((key, distributions[key]) for key in distributions))
+                                 ((key, DISTRIBUTIONS[key]) for key in DISTRIBUTIONS))
     estimators = forms.MultipleChoiceField(label=_("Estimators")+":",widget=forms.SelectMultiple(attrs={'class':'form-control'}),choices=
-                                 ((key, estimators[key]) for key in estimators))
+                                 ((key, ESTIMATORS[key]) for key in ESTIMATORS))
