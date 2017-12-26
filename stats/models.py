@@ -3,8 +3,8 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.contrib.postgres.fields import ArrayField, JSONField
 
-estimators = {'lmom':"L-Moments", 'mlh': "Maximum Likely-Hood"} 
-distributions = {'gev': "Generalized Extreme Value"}    
+ESTIMATORS = {'lmom':"L-Moments", 'mlh': "Maximum Likely-Hood"}
+DISTRIBUTIONS = {'gev': "Generalized Extreme Value"}
 
 '''
 class ProbabilityCurve(models.Model):
@@ -32,7 +32,7 @@ class BaseSerie(models.Model):
     @property
     def distribution(self):
         '''property: distribution'''
-        return self.curve['distribution']
+        return DISTRIBUTIONS[self.curve['distribution']]
     @property
     def alpha(self):
         '''property: alpha'''
@@ -59,5 +59,5 @@ class ResamplingSerie(models.Model):
         max_length=5,
         verbose_name=_('estimator'),
         blank=True,
-        choices=((key, estimators[key]) for key in estimators)
+        choices=((key, ESTIMATORS[key]) for key in ESTIMATORS)
     )
