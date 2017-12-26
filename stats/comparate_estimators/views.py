@@ -8,7 +8,7 @@ from django.utils.safestring import mark_safe
 from django.utils.translation import gettext_lazy as _
 from django.views import View
 from core.graphs import plot_web
-from stats.models import BaseSerie, ResamplingSerie
+from ..models import BaseSerie, ResamplingSerie
 from .forms import SerieFromParametersForm, ResamplingSerieForm
 from ..resampling import Resampling, plot_comparative
 
@@ -86,7 +86,7 @@ class SerieFromParameters(View):
 class SerieResamplingDetail(View):
     '''This class '''
 
-    context = {"BASE_URL":""}
+    context = {"BASE_URL":  ""}
 
     def get(self, request,base_serie_id, *args, **kwargs):
         base_serie = BaseSerie.objects.get(id=base_serie_id)
