@@ -33,12 +33,11 @@ lmoments3
 ```terminal
 python -m pip install -r requirements.txt
 ```
-4. No arquivo flow_stats/urls.py, comente as linhas 26 e 27:
+4. No arquivo flow_stats/urls.py, comente a linha 26:
 ```python
 urlpatterns += i18n_patterns(
     url(r'^admin/', admin.site.urls),
     url(r'^stats/', include('stats.urls')),
-    url(r'^$', include('stats.urls')),
 )
 ```
 5. Abra a linha de comando ou terminal na pasta do projeto no seu computador e execute o comando migrate (obs.: lembre-se de instalar o postgresql e criar um banco de dados com o nome flow_stats):
@@ -51,3 +50,5 @@ python manage.py migrate
 ```powershell
 python manage.py runserver
 ```
+
+8. Acesse http://localhost:8000/en-us/stats/study/(http://localhost:8000/en-us/stats/study/)
