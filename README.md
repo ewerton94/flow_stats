@@ -1,6 +1,6 @@
 # Flow: módulo de estudo em análise de frequência
 
-Este é um aplicativo criado para facilitar estudos em hidrologia e estatístiva, criado pelo time de desenvolvimento Flow, do Centro de Tecnologia da Universidade Federal de Alagoas (CTEC/UFAL).
+Este é um aplicativo criado para facilitar estudos em hidrologia e estatística, criado pelo time de desenvolvimento Flow, do Centro de Tecnologia da Universidade Federal de Alagoas (CTEC/UFAL).
 
 ### 1. Getting started
 
@@ -19,7 +19,6 @@ plotly
 xlrd
 xlwt
 lmoments3
-
 
 ```
 
