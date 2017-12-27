@@ -1,0 +1,489 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-27 20:53-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\core\graphs.py:12 .\core\graphs.py:28 .\core\graphs.py:52
+msgid "time"
+msgstr "tempo"
+
+#: .\flow_stats\settings.py:118
+msgid "English"
+msgstr "Inglês"
+
+#: .\flow_stats\settings.py:119
+msgid "Portuguese"
+msgstr "Português"
+
+#: .\stats\comparate_estimators\forms.py:6
+msgid "Probability Values or Aleatory?"
+msgstr "Valores de probabilidade ou Aleatório?"
+
+#: .\stats\comparate_estimators\forms.py:7
+msgid "Probabilities"
+msgstr "Probabilidades"
+
+#: .\stats\comparate_estimators\forms.py:7
+msgid "Aleatory"
+msgstr "Aleatório"
+
+#: .\stats\comparate_estimators\forms.py:8
+msgid "Values of probability (numbers separateds by commas)"
+msgstr "Valores de probabilidade (números separados por vírgulas)"
+
+#: .\stats\comparate_estimators\forms.py:9
+msgid "Size of sample"
+msgstr "Tamanho da amostra"
+
+#: .\stats\comparate_estimators\forms.py:10
+#: .\stats\comparate_estimators\forms.py:20
+#, fuzzy
+#| msgid "Discretization"
+msgid "Distribution"
+msgstr "Discretização"
+
+#: .\stats\comparate_estimators\forms.py:12
+msgid "Apha"
+msgstr "Alfa"
+
+#: .\stats\comparate_estimators\forms.py:13
+msgid "Betha"
+msgstr "Beta"
+
+#: .\stats\comparate_estimators\forms.py:14
+msgid "Kappa"
+msgstr "Kapa"
+
+#: .\stats\comparate_estimators\forms.py:17
+msgid "Sample sizes"
+msgstr "Tamanhos das amostras"
+
+#: .\stats\comparate_estimators\forms.py:19
+msgid "Number of samples"
+msgstr "Número de amostras"
+
+#: .\stats\comparate_estimators\forms.py:22
+#, fuzzy
+#| msgid "stations"
+msgid "Estimators"
+msgstr "postos"
+
+#: .\stats\models.py:23 .\stats\models.py:52
+msgid "length"
+msgstr "tamanho"
+
+#: .\stats\models.py:24 .\stats\models.py:53
+msgid "curve"
+msgstr "curva"
+
+#: .\stats\models.py:25 .\stats\models.py:54
+msgid "data"
+msgstr "dado"
+
+#: .\stats\models.py:28 .\stats\models.py:56
+msgid "probabilities"
+msgstr "probabilidades"
+
+#: .\stats\models.py:51
+msgid "base_serie"
+msgstr "serie_base"
+
+#: .\stats\models.py:60
+#, fuzzy
+#| msgid "station"
+msgid "estimator"
+msgstr "posto"
+
+#: .\templates\base.html:9 .\templates\base.html:181
+msgid "Computational Hydrology"
+msgstr "Hidrologia Computacional"
+
+#: .\templates\base.html:110
+msgid "STATION INFORMATION"
+msgstr "INFORMAÇÕES DO POSTO"
+
+#: .\templates\base.html:114
+msgid "Stats"
+msgstr "Estatísticas"
+
+#: .\templates\base.html:133
+#, fuzzy
+#| msgid "Source"
+msgid "Data Source"
+msgstr "Fonte"
+
+#: .\templates\base.html:149
+#, fuzzy
+#| msgid "variable"
+msgid "Data variables"
+msgstr "variável"
+
+#: .\templates\base.html:163
+msgid "Documentation"
+msgstr "Documentação"
+
+#: .\templates\base.html:181
+msgid "All rights reserved."
+msgstr "Todos os direitos reservados."
+
+#: .\templates\base_information.html:23
+msgid "Export data to Excel"
+msgstr "Exportar dados para o Excel"
+
+#: .\templates\base_information.html:36
+msgid "Export data to JSON"
+msgstr "Exportar dados para JSON"
+
+#: .\templates\create_station.html:3
+msgid "New station"
+msgstr "Novo posto"
+
+#: .\templates\create_station.html:7 .\templates\stations.html:15
+msgid "Create a new station"
+msgstr "Criar um novo posto"
+
+#: .\templates\iha.html:3 .\templates\iha.html:4
+msgid "Indicators of Hydrologic Alterations"
+msgstr "Indicadores de alteração Hidrológica"
+
+#: .\templates\iha.html:13 .\templates\iha.html:248
+msgid "Means"
+msgstr "Médias"
+
+#: .\templates\iha.html:27 .\templates\iha.html:132
+msgid "IHA Group"
+msgstr "Grupo IHA"
+
+#: .\templates\iha.html:28 .\templates\iha.html:133
+msgid "Pre-impact"
+msgstr "Pré-impacto"
+
+#: .\templates\iha.html:29 .\templates\iha.html:134
+msgid "Pos-impact"
+msgstr "Pós-impacto"
+
+#: .\templates\iha.html:30 .\templates\iha.html:135
+#, fuzzy
+#| msgid "Discretization"
+msgid "Deviation"
+msgstr "Discretização"
+
+#: .\templates\iha.html:31 .\templates\iha.html:136
+msgid "Confidence limits"
+msgstr "Intervalos de confiança"
+
+#: .\templates\iha.html:36 .\templates\iha.html:141
+msgid "Group 1 - Monthly Magnitude"
+msgstr "Grupo 1 - Magnitude Mensal"
+
+#: .\templates\iha.html:49 .\templates\iha.html:154
+msgid "Group 2 - Magnitude and duration of annual extremes"
+msgstr "Grupo 2 - Magnitude e duração de extremos anuais"
+
+#: .\templates\iha.html:63 .\templates\iha.html:168
+msgid "Group 3 - Timing of annual extremes"
+msgstr "Grupo 3 - Período de ocorrência de extremos anuais"
+
+#: .\templates\iha.html:77 .\templates\iha.html:182
+msgid "Group 4 - Frequency and duration of low and high pulses"
+msgstr "Grupo 4 - Frequência e duração de pulsos de cheaia e estiagem"
+
+#: .\templates\iha.html:93 .\templates\iha.html:198
+#, fuzzy
+#| msgid "Frequency of change"
+msgid "Group 5 - Rate and Frequency of change"
+msgstr "Grupo 5 - Razão e Frequência de mudança"
+
+#: .\templates\iha.html:118
+msgid "Coefficients of variation"
+msgstr "Coeficientes de variação"
+
+#: .\templates\iha.html:222 .\templates\station_information.html:11
+#, python-format
+msgid "Hydrogram %(variable)s - %(tipo_dado)s Data"
+msgstr "Hidrograma de %(variable)s - dados %(tipo_dado)ss"
+
+#: .\templates\resampling_information.html:4
+#: .\templates\stats_information.html:4
+#: .\templates\stats_study_information.html:4
+#, fuzzy
+#| msgid "Station Information"
+msgid "Information"
+msgstr "Informações do posto"
+
+#: .\templates\station_information.html:4
+msgid "Station Information"
+msgstr "Informações do posto"
+
+#: .\templates\stations.html:3
+msgid "Stations"
+msgstr "Postos"
+
+#: .\templates\stations.html:7
+msgid "Station select"
+msgstr "Selecione o Posto"
+
+#~ msgid "date and time"
+#~ msgstr "data e hora"
+
+#~ msgid "Temporal Series"
+#~ msgstr "Séries Temporais"
+
+#~ msgid "Temporal Serie"
+#~ msgstr "Série Temporal"
+
+#~ msgid "type"
+#~ msgstr "tipo"
+
+#~ msgid "pandas code"
+#~ msgstr "código pandas"
+
+#, fuzzy
+#~| msgid "station type"
+#~ msgid "stats type"
+#~ msgstr "tipo de posto"
+
+#~ msgid "Discretizations"
+#~ msgstr "Discretizações"
+
+#~ msgid "unit"
+#~ msgstr "unidade"
+
+#~ msgid "Metric Units"
+#~ msgstr "Unidades de medida"
+
+#~ msgid "Metric Unit"
+#~ msgstr "Unidade de medida"
+
+#~ msgid "variable"
+#~ msgstr "variável"
+
+#~ msgid "ANA code"
+#~ msgstr "código ANA"
+
+#~ msgid "Variables"
+#~ msgstr "Variáveis"
+
+#~ msgid "Variable"
+#~ msgstr "Variável"
+
+#, fuzzy
+#~| msgid "level of consistency"
+#~ msgid "Levels of consistency"
+#~ msgstr "níveis de consistência"
+
+#, fuzzy
+#~| msgid "level of consistency"
+#~ msgid "Level of consistency"
+#~ msgstr "nível de consistência"
+
+#~ msgid "level of consistency"
+#~ msgstr "nível de consistência"
+
+#~ msgid "discretization"
+#~ msgstr "discretização"
+
+#~ msgid "Original Serie from %s data from %s station, with %s (%s) data"
+#~ msgstr "Série Original com dados de %s do posto %s - %s (%s)"
+
+#~ msgid "Original Series"
+#~ msgstr "Séries Originais"
+
+#~ msgid "Original Serie"
+#~ msgstr "Série Original"
+
+#~ msgid "Station Type:"
+#~ msgstr "Tipo do posto:"
+
+#~ msgid "Source:"
+#~ msgstr "Fonte:"
+
+#~ msgid "ANA Code:"
+#~ msgstr "Código ANA:"
+
+#~ msgid "Coordinates"
+#~ msgstr "Coordenadas"
+
+#~ msgid "Coordinate"
+#~ msgstr "Coordenada"
+
+#~ msgid "Localizations"
+#~ msgstr "Localizações"
+
+#~ msgid "Localization"
+#~ msgstr "Localização"
+
+#~ msgid "coordinates"
+#~ msgstr "coordenadas"
+
+#~ msgid "Station Types"
+#~ msgstr "Tipos de posto"
+
+#~ msgid "Station type"
+#~ msgstr "Tipo de posto"
+
+#~ msgid "Sources"
+#~ msgstr "Fontes"
+
+#~ msgid "Source"
+#~ msgstr "Fonte"
+
+#~ msgid "Station"
+#~ msgstr "Posto"
+
+#~ msgid "station type"
+#~ msgstr "tipo de posto"
+
+#~ msgid "source"
+#~ msgstr "fonte"
+
+#~ msgid "code"
+#~ msgstr "código"
+
+#~ msgid "name"
+#~ msgstr "nome"
+
+#~ msgid "localization"
+#~ msgstr "localização"
+
+#~ msgid "There is no data from '%s' variable in this station."
+#~ msgstr "Não exte dados da variável '%s' neste posto."
+
+#~ msgid "Rolling Mean"
+#~ msgstr "Médias móveis"
+
+#~ msgid "Basic Stats"
+#~ msgstr "Estatística Básica"
+
+#~ msgid "Rate of change"
+#~ msgstr "Razão de mudança"
+
+#~ msgid "Frequency of change"
+#~ msgstr "Frequência de mudança"
+
+#~ msgid "Julian Date"
+#~ msgstr "Data Juliana"
+
+#~ msgid "Pulse Count"
+#~ msgstr "Número de pulsos"
+
+#~ msgid "Pulse Duration"
+#~ msgstr "Duração de pulsos"
+
+#~ msgid "Reference Flow"
+#~ msgstr "Vazão de Referência"
+
+#~ msgid "The station of code: %s already exists into the database."
+#~ msgstr "O posto de código: %s já existe no banco de dados."
+
+#, fuzzy
+#~| msgid "Station type"
+#~ msgid "Data type"
+#~ msgstr "Tipo de dado"
+
+#, fuzzy
+#~| msgid "Station type"
+#~ msgid "Data to compare"
+#~ msgstr "Tipo de dado"
+
+#~ msgid "Initial Date"
+#~ msgstr "Data inicial"
+
+#~ msgid "Final Date"
+#~ msgstr "Data Final"
+
+#, fuzzy
+#~| msgid "Temporal Serie"
+#~ msgid "temporal serie id"
+#~ msgstr "Série Temporal"
+
+#~ msgid "Reductions"
+#~ msgstr "Reduções"
+
+#~ msgid "Reduction"
+#~ msgstr "Redução"
+
+#, fuzzy
+#~| msgid "Original Serie"
+#~ msgid "original serie"
+#~ msgstr "Série Original"
+
+#~ msgid "reduction"
+#~ msgstr "redução"
+
+#~ msgid "Reduced Series"
+#~ msgstr "Séries reduzidas"
+
+#~ msgid "Reduced Serie"
+#~ msgstr "Série reduzida"
+
+#, fuzzy
+#~| msgid "Rolling Mean"
+#~ msgid "Rolling mean series"
+#~ msgstr "Médias móveis"
+
+#, fuzzy
+#~| msgid "Rolling Mean"
+#~ msgid "Rolling mean serie"
+#~ msgstr "Médias móveis"
+
+#~ msgid "%s Serie"
+#~ msgstr "Série %s"
+
+#~ msgid "daily_data"
+#~ msgstr "dados diários"
+
+#, fuzzy
+#~| msgid "discretization"
+#~ msgid "%(discretization)s %(variable)s"
+#~ msgstr "discretização"
+
+#~ msgid "rate of change"
+#~ msgstr "razão de mudança"
+
+#~ msgid "rate"
+#~ msgstr "razão"
+
+#~ msgid "frequency of change"
+#~ msgstr "frequência de mudança"
+
+#~ msgid "frequency"
+#~ msgstr "frequência"
+
+#~ msgid "Rate"
+#~ msgstr "Razão"
+
+#~ msgid "julian date"
+#~ msgstr "data juliana"
+
+#~ msgid "Flow"
+#~ msgstr "Vazão"
+
+#~ msgid "mean"
+#~ msgstr "média"
+
+#, fuzzy
+#~| msgid "discretization"
+#~ msgid "%(discretization)s %(variable)s %(reduction)s"
+#~ msgstr "discretização"
+
+#~ msgid "Rolean mean"
+#~ msgstr "Média móvel"
+
+#~ msgid "Data"
+#~ msgstr "Dados"
