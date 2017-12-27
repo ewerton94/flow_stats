@@ -1,8 +1,8 @@
+'''This module is about resampling'''
 from random import uniform, choice
-import pandas as pd
-from core.graphs import plot_web
-from .frequency import FrequencyAnalysis, distribution_functions
-from .models import ResamplingSerie, BaseSerie
+from core.graphs import box_plot
+from ..frequency import FrequencyAnalysis, inverse_by_distribution
+from ..models import ResamplingSerie, BaseSerie
 
 def data_from_curve(curve, length=None, probabilities=None):
     '''Get data from curve'''
@@ -45,26 +45,27 @@ class Resampling(object):
 
 def plot_comparative(base_serie, length):
     y1 = []; y2 = []
-    magnitudes, probabilities = base_serie.data, base_serie.probabilities
+    probabilities = [0.001, 0.002, 0.01, 0.1, 0.2, 0.3, 0.5, 0.7, 0.8, 0.9, 0.99, 0.998, 0.999]
+    box = {}
     for serie in ResamplingSerie.objects.filter(base_serie_id=base_serie.id).filter(length=length).filter(estimator='mlh'):
-        data = []
-        for m in magnitudes:
-            data.append(
-                distribution_functions['gev'](m, serie.curve['parameters']['kappa'],
+        for p in probabilities:
+            m = inverse_by_distribution['gev'](p, serie.curve['parameters']['kappa'],
                 loc=serie.curve['parameters']['betha'],
-                scale=serie.curve['parameters']['alpha'])
+                scale=serie.curve['parameters']['alpha']
             )
-        df = pd.DataFrame(data)
-        y1.append(df.quantile(0.25).values[0])
-        y2.append(df.quantile(0.75).values[0])
-    print(y1)
-    print(y2)
-    return plot_web(
-        [[magnitudes, y1], [magnitudes, probabilities], [magnitudes, y2]],
+            if m<20000:
+                box.setdefault(p, []).append(m) 
+    list_plot = [[base_serie.data, base_serie.probabilities],]
+    list_plot.extend([[box[key], str(key)] for key in box])
+    print(list_plot)
+    names_plot = ['original',]
+    names_plot.extend(probabilities)
+
+    return box_plot(
+        list_plot,
         'Cumulative Density Function',
         "percent",
         "%",
-        ['interval1', 'original', 'interval2'],
-        'm3/s',
-        mode='markers'
-)
+        names_plot,
+        'm3/s'
+    )
