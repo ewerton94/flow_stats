@@ -97,7 +97,7 @@ class SerieResamplingDetail(View):
         self.context['base_serie'] = base_serie
         self.context["graph"] = plot_web([[base_serie.data,base_serie.probabilities],], 'Cumulative Density Function',"percent","%",['quantile',],'m3/s',mode='markers')
         graphs = []
-        for n in [5,]:#,10,15,20,25,30,50,100]:
+        for n in [100,]:#,10,15,20,25,30,50,100]:
             graphs.append(plot_comparative(base_serie, n))
             print(n)
         self.context["graphs"] = graphs
