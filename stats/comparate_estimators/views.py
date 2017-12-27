@@ -10,7 +10,7 @@ from django.views import View
 from core.graphs import plot_web
 from ..models import BaseSerie, ResamplingSerie
 from .forms import SerieFromParametersForm, ResamplingSerieForm
-from ..resampling import Resampling, plot_comparative
+from .resampling import Resampling, plot_comparative
 
 '''
 def export_xls(reduceds,stats_name):
